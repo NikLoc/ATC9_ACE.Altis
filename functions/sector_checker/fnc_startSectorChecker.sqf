@@ -65,9 +65,9 @@ while {!ATC_gameStoped} do {
 						_VehInSector pushBack (vehicle _x);
 					};
 				}else { //if (vehicle _x == _x) then
-					_isRecon = _x getVariable ["isRecon",false];
+					_isSF = _x getVariable ["isSF",false];
 					
-					if (!(_isRecon)) then
+					if (!(_isSF)) then
 					{
 						_unitsInSector pushBack (side _x);
 					};
